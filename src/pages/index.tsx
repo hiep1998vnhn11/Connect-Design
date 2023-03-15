@@ -1,7 +1,7 @@
-import React from 'react';
-
 import { GetStaticProps } from 'next';
+import Image from 'next/image';
 
+import banner from '../assets/images/banner.png';
 import { BlogGallery, IBlogGalleryProps } from '../blog/BlogGallery';
 import { Meta } from '../layout/Meta';
 import { IPaginationProps } from '../pagination/Pagination';
@@ -18,6 +18,15 @@ const Index = (props: IBlogGalleryProps) => (
       />
     }
   >
+    <Image
+      src={banner}
+      width={3840}
+      height={1600}
+      alt="banner"
+      sizes="(max-width: 766px) 100vw, 100vw"
+      layout="responsive"
+      priority
+    />
     <BlogGallery posts={props.posts} pagination={props.pagination} />
   </Main>
 );

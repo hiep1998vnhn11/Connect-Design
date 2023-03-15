@@ -20,4 +20,7 @@ module.exports = withBundleAnalyzer({
     locales: ['vi', 'en'],
     defaultLocale: 'vi',
   },
+  images: {
+    formats: ['image/webp'],
+  },
 });
