@@ -5,8 +5,8 @@ import { AppConfig } from '../utils/AppConfig';
 import { addTrailingSlash } from '../utils/Url';
 
 type IMetaProps = {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   canonical?: string;
   post?: {
     image: string;
@@ -51,7 +51,7 @@ const Meta = (props: IMetaProps) => {
           href={`${router.basePath}/favicon.ico`}
           key="favicon"
         />
-        <title>{`${props.title} | ${AppConfig.site_name}`}</title>
+        <title>{props.title ?? AppConfig.title}</title>
         <meta
           name="description"
           content={

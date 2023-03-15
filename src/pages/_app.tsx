@@ -1,18 +1,13 @@
 import { AppProps } from 'next/app';
-import { NextIntlProvider } from 'next-intl';
 
 import '../styles/main.css';
-import '../styles/prism-a11y-dark.css';
+import '../assets/styles/index.scss';
 
 const MyApp = ({
   Component,
   pageProps,
 }: AppProps<{
   messages: Record<string, string>;
-}>) => (
-  <NextIntlProvider messages={pageProps.messages}>
-    <Component {...pageProps} />
-  </NextIntlProvider>
-);
+}>) => <Component {...pageProps} />;
 
 export default MyApp;

@@ -15,6 +15,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        primary: '#c62828',
+        secondary: '#F9A602',
         gray: {
           100: '#f7fafc',
           200: '#edf2f7',
@@ -36,6 +38,19 @@ module.exports = {
           700: '#2b6cb0',
           800: '#2c5282',
           900: '#2a4365',
+        },
+      },
+      fontFamily: {
+        sans: ['Nunito', 'sans-serif'],
+      },
+      container: {
+        center: true,
+        padding: '1rem',
+        screens: {
+          sm: '600px',
+          md: '728px',
+          lg: '984px',
+          xl: '1230px',
         },
       },
     },

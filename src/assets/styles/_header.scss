@@ -1,0 +1,28 @@
+.header-nav-item {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+  position: relative;
+  padding: 0.8rem 0.4rem;
+  &:last-child {
+    margin-right: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    transform: translateX(-50%);
+    transition: width 0.25s ease-in-out;
+    background-color: currentColor;
+  }
+  &:hover::after {
+    width: 80%;
+  }
+}

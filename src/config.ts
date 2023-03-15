@@ -1,10 +1,7 @@
-export const AppConfig = {
-  site_name: 'Starter',
-  url: 'https://example.com',
-  locale: 'en',
-  author: 'Anonymous',
-  pagination_size: 5,
+// Place any global data in this file.
+// You can import this data from anywhere in your site by using the `import` keyword.
 
+export const appConfig = {
   title: 'Phụ tùng Hải Trung',
   description:
     'Chuyên kinh doanh và phân phối phụ tùng ô tô chính hãng và nhập khẩu chính hãng từ các thương hiệu Toyota, Hyundai, Lexus, ...',
